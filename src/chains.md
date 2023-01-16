@@ -13,7 +13,8 @@ which returns `None` in the default implementation. But we can override that:
 impl std::error::Error for MyError {
   // look, no longer empty!
   fn source(&self) -> Option<&(dyn Error + 'static)> {
-    Some(&self.inner_error)
+    // assuming that self.inner is wrapped in an Option
+    self.inner.as_deref() // take a reference of the inner value
   }
 }
 ```
