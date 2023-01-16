@@ -1,0 +1,6 @@
+[book]
+authors = ["Jörn Bethune"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Error Handling using only the Rust Standard Library"

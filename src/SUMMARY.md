@@ -1,0 +1,23 @@
+# Vanilla Error Handling in Rust
+
+- [Intro Slide](./intro.md)
+- [What is an error](./what_is_an_error.md)
+- [Reasons for errors](./reasons.md)
+- [Error structs](./error_structs.md)
+- [Using information from errors](./using_error_information.md)
+   * [The `Result` enum](./result.md)
+   * [Error handling with `Result`](./result_handling.md)
+- [Error examples from the standard library](./stdlib.md)
+   * [Example: `std::io::Error`](./stdioerror.md)
+   * [Example: `std::num::ParseIntError`](./parseinterror.md)
+- [How to make errors useful](./useful_errors.md)
+   * [Automatic error handling by the program](./automatic_handling.md)
+   * [Error handling by the user](./user_error_handling.md)
+   * [Crash when unexpected things happen](./crash.md)
+- [Combining error types](./combining_types.md)
+   * [Error enums](./enums.md)
+   * [Error conversion](./conversion.md)
+   * [Chains of errors](./chains.md)
+- [The question mark operator](./questionmark.md)
+- [The end](./end.md)
+
