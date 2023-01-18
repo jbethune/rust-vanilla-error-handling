@@ -16,8 +16,8 @@ pub struct MyError {
 impl fmt::Display for MyError {
   // I copy & paste this code snippet every time
   fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-          write!(f, "{}", self.message)  // note the lack of semicolon
-      }
+    write!(f, "{}", self.message)  // note the lack of semicolon
+  }
 }
 
 impl std::error::Error for MyError {} // look, no code!
